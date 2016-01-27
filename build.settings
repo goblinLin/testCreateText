@@ -53,6 +53,11 @@ settings =
 				"Icon-Small-50@2x.png",
 			},
 
+			UIAppFonts =
+			{
+				"華康少女字体.ttf"  --字形檔名稱
+			},
+
 			--[[
 			-- iOS app URL schemes:
 			CFBundleURLTypes =
