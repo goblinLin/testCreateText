@@ -11,23 +11,23 @@ _SCREEN = {
 
 
 _SCREEN.CENTER = {
-	x = display.contentCenterX,
-	y = display.contentCenterY
+	X = display.contentCenterX,
+	Y = display.contentCenterY
 }
 
 display.setStatusBar( display.HiddenStatusBar )
 
 --使用預設字型顯示Hello World，座標為(0,0)，字體大小為40
 local text = display.newText(  "Hello World", 0 , 0  , system.nativeFont, 40 )
-text.x = _SCREEN.CENTER.x
-text.y = _SCREEN.CENTER.y - 100
+text.x = _SCREEN.CENTER.X
+text.y = _SCREEN.CENTER.Y - 100
 
 --使用自行準備的華康少女自体來顯示中文字，如果找不到則使用預設字體
 --宣告一個字型參考，使用字型檔名，去掉副檔名
 local font_girl = "華康少女字体"
 local text1 = display.newText( "你好，全世界!", 0, 0, font_girl , 50)
-text1.x = _SCREEN.CENTER.x
-text1.y = _SCREEN.CENTER.y
+text1.x = _SCREEN.CENTER.X
+text1.y = _SCREEN.CENTER.Y
 
 --列出系統支援字型
 local fonts = native.getFontNames()
